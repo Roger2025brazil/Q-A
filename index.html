@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Perguntas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Jogo de Perguntas</h1>
+    <input type="file" id="file-input" accept=".json" />
+    <div id="question-container">
+      <p id="question-text"></p>
+      <div id="options-container"></div>
+    </div>
+    <div id="score-container">
+      <p>Acertos: <span id="correct-score">0</span> | Erros: <span id="incorrect-score">0</span> | Porcentagem: <span id="percentage">0%</span></p>
+    </div>
+    <button id="confirm-button" disabled>Confirmar Minha Escolha</button>
+    <button id="next-button" style="display: none;">Próxima Pergunta</button>
+  </div>
+  <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
+  <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
